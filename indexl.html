@@ -2,14 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>骰子布局</title>
+    <link rel="stylesheet" href="./indexl.css">
+    <style>
+        body {
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        body>div {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+        
+        p {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 2px;
+        }
+        
+        .div1 {
+            justify-content: center;
+            align-items: center;
+        }
+        /*todo:请补全剩余骰子布局代码*/
+        
+        .div2 {
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .div3 {
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .div3 p:nth-child(1) {
+            align-self: flex-start;
+        }
+        
+        .div3 p:nth-child(3) {
+            align-self: flex-end;
+        }
+        
+        .div4 {
+            justify-content: space-around;
+        }
+        
+        .div4 div {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+        }
+        
+        .div5 {
+            justify-content: space-around;
+        }
+        
+        .div5 div {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+        }
+        
+        .div6 {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        
+        .div6 div {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 
 <body>
-
+    <!--骰子1-->
+    <div class="div1">
+        <p></p>
+    </div>
+    <!--骰子2-->
+    <div class="div2">
+        <p></p>
+        <p></p>
+    </div>
+    <!--骰子3-->
+    <div class="div3">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <!--骰子4-->
+    <div class="div4">
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!--骰子5-->
+    <div class="div5">
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!--骰子6-->
+    <div class="div6">
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!--骰子7-->
+    <div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!--骰子8-->
+    <div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!--骰子9-->
+    <div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <script src="./indexl.js"></script>
 </body>
 
 </html>
